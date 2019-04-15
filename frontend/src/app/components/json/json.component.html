@@ -1,0 +1,16 @@
+<div class="container ">
+  <div class="well">
+    <ul>
+      <li class="text-primary" *ngFor="let object of course">
+        <h3>
+          {{ object.courseName | lowercase }}&nbsp;&nbsp;{{
+            object.coursePrice | currency: "INR"
+          }}
+        </h3>
+      </li>
+    </ul>
+    <br />
+  </div>
+  <br />
+  <a class="btn btn-warning" role="button" routerLink="">Go Back</a>
+</div>
